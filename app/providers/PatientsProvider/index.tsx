@@ -20,7 +20,7 @@ export const PatientsProvider: React.FC<{ children: React.ReactNode }> = ({ chil
             try {
                 await new Promise((resolve) => setTimeout(resolve, 1000));
                 setPatients(patientsData as unknown as Patient[]);
-            } catch (err) {
+            } catch {
                 setError('Failed to load patients data');
             } finally {
                 setLoading(false);
