@@ -4,9 +4,7 @@ import { useTheme } from "next-themes"
 
 export default function ThemeToggle() {
 
-    const { setTheme, theme } = useTheme()
-
-    console.log("==> ThemeToggle rendered", theme);
+    const { setTheme } = useTheme()
 
     return (
         <div className="flex gap-4">
