@@ -1,7 +1,7 @@
-export default function FrequencyCount() {
+export default function FrequencyCount({ count = 1 }: { count?: number } = {}) {
     return (
         <span>
-            1x
+            {count}x
         </span>
     )
 }
